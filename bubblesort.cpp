@@ -1,7 +1,6 @@
 ﻿#include <iostream>
 
-int n;
-int sort(int *A) {
+int sort(int *A, int n) {
 
 	int temp; // временная переменная для обмена элементов местами
 for (int i = 0; i < n - 1; i++) {
@@ -21,6 +20,7 @@ using namespace std;
 
 int main()
 {
+	int n;
 	int *A; // указатель для  массива
 
 	// Ввод количества элементов массива
@@ -38,7 +38,7 @@ int main()
 	int temp; // временная переменная для обмена элементов местами
 
 	// Сортировка массива 
-	sort(A);
+	sort(A,n);
 
 	// Вывод отсортированного массива
 	for (int i = 0; i < n; i++) {
